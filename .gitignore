@@ -1,6 +1,7 @@
-assets/*
-!assets/.gitignore
-protected/runtime/*
-!protected/runtime/.gitignore
-protected/data/*.db
-themes/classic/views/
+web/db.php
+web/mailer.php
+runtime
+tests
+vendor/
+.idea
+
