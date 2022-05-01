@@ -1,0 +1,6 @@
+web/db.php
+web/mailer.php
+runtime
+tests
+vendor/
+.idea
