@@ -29,7 +29,8 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
 
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
@@ -37,7 +38,7 @@ AppAsset::register($this);
 </head>
 <body>
 
-<header id="header" class="fixed-top ">
+<header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
         <h1 class="logo me-auto"><a href="/">Маймистов М.Ю.</a></h1>
@@ -48,7 +49,12 @@ AppAsset::register($this);
                 <li><a class="nav-link scrollto" href="#about">Обо мне</a></li>
                 <li><a class="nav-link scrollto" href="#services">Юридическая помощь</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Контакты</a></li>
-                <li><a class="getstarted scrollto" href="#about">Связаться</a></li>
+                <li><a class="getstarted scrollto" href="#contact">Связаться</a></li>
+                <?php if (!Yii::$app->user->isGuest) { ?>
+                    <li><a class="getstarted scrollto" href="/admin"><?= Yii::$app->user->identity['username'] ?></a>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/admin/auth/logout">Выйти</a></li>
+                <?php } ?>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -61,20 +67,6 @@ AppAsset::register($this);
 <?= $content ?>
 
 <footer id="footer">
-
-    <div class="footer-newsletter">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h4>Join Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="footer-top">
         <div class="container">
@@ -114,7 +106,8 @@ AppAsset::register($this);
 </footer>
 
 <div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 <?php $this->endBody() ?>
 
 <?php $this->endPage() ?>

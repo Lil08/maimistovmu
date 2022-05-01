@@ -11,6 +11,8 @@ use yii\helpers\Html;
 $this->title = 'Авторизация';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<br><br><br><br>
+<br><br><br><br>
 <div class="container">
     <div class="site-login">
         <h1><?= Html::encode($this->title) ?></h1>
@@ -40,4 +42,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <?php ActiveForm::end(); ?>
     </div>
+
+    <br><br><br><br><br>
 </div>
