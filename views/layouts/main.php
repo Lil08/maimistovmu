@@ -72,25 +72,15 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-9 col-md-6 footer-contact">
-                    <h3>Маймистов М.Ю.</h3>
-                    <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                    </p>
-                </div>
+                <?= ContactWidget::widget(['view' => 'footer']) ?>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>Полезные ссылки</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        <li><a class="bx bx-chevron-right active" href="#hero">Главная</a></li>
+                        <li><a class="bx bx-chevron-right" href="#about">Обо мне</a></li>
+                        <li><a class="bx bx-chevron-right" href="#services">Юридическая помощь</a></li>
+                        <li><a class="bx bx-chevron-right" href="#contact">Контакты</a></li>
                     </ul>
                 </div>
 
