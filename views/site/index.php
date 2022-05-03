@@ -75,10 +75,9 @@ $this->title = 'Адвокат Маймистов Максим Юрьевич';
                 <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
                     <div class="content">
-                        <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+                        <h3>Часто задаваемые <strong>вопросы</strong></h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+
                         </p>
                     </div>
 
@@ -124,9 +123,8 @@ $this->title = 'Адвокат Маймистов Максим Юрьевич';
                     </div>
 
                 </div>
-
                 <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                     style="background-image: url('img/why-us.png');" data-aos="zoom-in" data-aos-delay="150">
+                     style="background-image: url('img/question1.png');" data-aos="zoom-in" data-aos-delay="150">
                     &nbsp;
                 </div>
 
@@ -144,9 +142,9 @@ $this->title = 'Адвокат Маймистов Максим Юрьевич';
                 <p>Защита физических и юридеческих лиц.</p>
             </div>
 
-            <div class="row">
+
                 <?= ServicesWidget::widget() ?>
-            </div>
+
 
         </div>
     </section><!-- End Services Section -->

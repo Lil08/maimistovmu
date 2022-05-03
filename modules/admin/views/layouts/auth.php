@@ -7,6 +7,7 @@
 use app\widgets\ContactWidget;
 use yii\helpers\Html;
 use app\assets\AppAsset;
+use yii\widgets\Breadcrumbs;
 
 AppAsset::register($this);
 ?>
@@ -62,8 +63,12 @@ AppAsset::register($this);
 </header>
 <?php $this->beginBody() ?>
 
-
-<?= $content ?>
+<div class="container">
+    <div class="row"><?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [], ]); ?></div>
+</div>
+<div class="container">
+    <?= $content ?>
+</div>
 
 <footer id="footer">
 
