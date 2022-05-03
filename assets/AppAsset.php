@@ -31,15 +31,15 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/aos.js',
-        'js/bootstrap.bundle.min.js',
-        'js/bootstrap.esm.js',
         'js/bootstrap.js',
-        'js/glightbox.min.js',
-        'js/isotope.pkgd.min.js',
-        'js/noframework.waypoints.js',
+        'js/bootstrap.bundle.js',
+        'js/bootstrap.esm.js',
+        'js/glightbox.js',
         'js/swiper-bundle.min.js',
-        'js/validate.js',
         'js/main.js',
+        'js/isotope.pkgd.js',
+        'js/noframework.waypoints.js',
+        'js/validate.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

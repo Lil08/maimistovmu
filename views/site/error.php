@@ -10,6 +10,7 @@ use yii\helpers\Html;
 
 $this->title = $name;
 ?>
+<br><br><br><br>
 <div class="container">
     <div class="site-error">
 
