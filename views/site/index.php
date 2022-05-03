@@ -124,7 +124,7 @@ $this->title = 'Адвокат Маймистов Максим Юрьевич';
 
                 </div>
                 <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                     style="background-image: url('img/question1.png');" data-aos="zoom-in" data-aos-delay="150">
+                     style="background-image: url('img/question.png');" data-aos="zoom-in" data-aos-delay="150">
                     &nbsp;
                 </div>
 
