@@ -63,10 +63,19 @@ AppAsset::register($this);
 
 <br><br><br><br>
 <div class="container">
-    <div class="row"><?= Breadcrumbs::widget(['links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [], ]); ?></div>
+    <div class="row">
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+            <?= Breadcrumbs::widget([
+                'tag' => 'ol',
+                'itemTemplate' => "<li class=\"breadcrumb-item\">{link}</li>\n",
+                'activeItemTemplate' => "<li class=\"breadcrumb-item active\">{link}</li>\n",
+                'links' => $this->params['breadcrumbs'],
+            ]); ?>
+        </nav>
+    </div>
 </div>
 <div class="container">
-<?= $content ?>
+    <?= $content ?>
 </div>
 
 
