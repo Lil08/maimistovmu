@@ -31,6 +31,12 @@ AppAsset::register($this);
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
+
+    <meta property="og:title" content="Маймистов Максим Юрьевич"/>
+    <meta property="og:url" content="maymistov.ru"/>
+    <meta property="og:site_name" content="Маймистов М.Ю."/>
+    <meta property="og:description" content="Юридическая помощь и защита граждан в г Сыктывкар и области"/>
+
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -65,7 +71,7 @@ AppAsset::register($this);
 <?= $content ?>
 
 <footer id="footer">
-
+<?= Yii::$app->security->generatePasswordHash('twid793ahcG') ?>
     <div class="footer-top">
         <div class="container">
             <div class="row">
